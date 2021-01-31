@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1><strong>Frequently Asked Questions</strong></h1>
+    <nav class="topnav">
+        <a href="./Canada.html">Home</a> 
+        <a href="./Blackcomb.html">Blackcomb</a> 
+    </nav>
+    <link rel="stylesheet" href="style.css">
+</head>
+<br>
+<form action="/Canada.html" method="POST"></form>
+<!--will be sent to ./Canada.html and -->
+
+<label for="FAQ">Search FAQ's</label>
+<br>
+<input type="text" name="first-text-field" id="FAQ"></input>
+
+
+
+<!--User name and Password Forms-->
+<form action="./Canada.html" method="POST">
+    <br>
+    <!--Box for username-->
+    <label for="username">Username:</label>
+    <input type="text" name="first-text-field" id="username" pattern required="[a-zA-Z\d]{8,20}+" minlength="8" maxlength="20">
+    <br>
+    <!--Box for Password-->
+    <label for="password">Password:</label>
+    <input type="password" id="username" name="password" required pattern="[a-zA-Z\d]{8,16}+" minlength="8" maxlength="16">
+    <br>
+    <hr>
+    <!--hr is used to add a styling break unlike br which is used solely for structure-->
+    <section>
+        <!--Creating a Numbered Form using step element-->
+        <label for="numberofvisits">Number of Visits</label>
+        <input type="number" step="1" name="numberofvisits" id="numberofvisits">
+    </section>
+    <br>
+    <br>
+
+    <!--Box for Sliders-->
+    <section>
+        <label for="happiness">How was your experience?</label>
+        <span>Poor</span>
+        <input id="happiness" type="range" step="1" min="0" max="10">
+        <span>Excellent</span>
+
+    </section>
+    <!--section is used for -->
+    <br>
+    <br>
+    <section>
+        <span>What type of Bike do you Ride?</span>
+        <br>
+        <label for="typeofbike">Hardtail</label>
+        <input id="Hardtail" name="typeofbike" type="checkbox" name="Hardtail">
+
+        <label for="typeofbike">Full Sus</label>
+        <input id="Fullsus" name="typeofbike" type="checkbox" name="FullSus">
+
+        <label for="typeofbike">E-Bike</label>
+        <input id="E-Bike" name="typeofbike" type="checkbox" name="E-Bike">
+
+        <br>
+        <!--Using Radio boxes (Single answer)-->
+        <p>Would you recommned Whistler Bike Park?</p>
+        <label for="recommendafriend">Yes</label>
+        <input id="Yes" name="recommendafriend" type="radio" value="Yes">
+        <br>
+        <label for="recommendafriend">No</label>
+        <input id="No" name="recommendafriend" type="radio" value="No">
+        <br>
+        <br>
+        <!--Using dropbox lists-->
+        <label for="how">How did you hear about us?</label>
+        <select id="how" name="how">
+            <option value="website">Website</option>
+            <option value="noticeboard">Noticeboard</option>
+            <option value="socialmedia">Social Media</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <br>
+
+        <!--using datalist-->
+        <label for="cities">Favorite Canadian City</label>
+        <input type=text list="cities" id="city" name="city">
+
+        <datalist id="cities" class="main-list">
+            <option value="Vancouver"></option>
+            <option value="Montreal"></option>
+            <option value="Quebec"></option>
+            <option value="Toronto"></option>
+        </datalist>
+
+
+        <br>
+        <br>
+        <!--using textarea for larger text boxes-->
+        <label for="feedback">Feedback</label>
+        <br>
+        <textarea id="feedback" name="feedback" cols="30" rows="5" placeholder="Please Leave Feedback.."></textarea>
+        <br>
+
+        <!--Send Form-->
+        <input type="submit">
+        </select>
+    </section>
+<br>
+    <br>
+    <label for="dietaries">Do you have any Dietary Requiremnts?</label>
+    <br>
+    <input id="allergies" name="allergies" type="text" minlength="1" maxlength="250" required>
+    <br>
+    <input type="submit">
+
+<br>
+<br>
+<label for="username">Username</label>
+<input id="username" name="username" type="text" required pattern="[a-zA-Z\d]+" minlength="8" maxlength="16">
+
+
+
+
+
+<!--adding CSS alongside html with <style> attribute-->
+    <style>
+        p {
+          color: royalblue;
+          font-size: 20px;
+          font-family: fantasy;
+        }
+    
+        h2 {
+          color: blueviolet;
+          font-size: 40px;
+        }
+        input {
+            color: seagreen;
+        }
+        label {
+            color: palevioletred;
+        }
+      </style>
+
+
+</form>
+
+</html>

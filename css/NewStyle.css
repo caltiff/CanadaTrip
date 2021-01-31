@@ -1,0 +1,284 @@
+
+html {background-color: white;
+}
+
+.headimg { 
+    position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 300px;
+}
+
+.topnav2 {
+    background-color:rgb(8, 8, 8);
+    margin: 0px;
+    padding: 20px;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'copperplate';
+    font-weight: bolder;
+    font-size: 30px;
+    border: black;
+    color: white;
+    text-decoration: none;
+    word-spacing: 50px;
+    text-align: center;
+    
+}
+
+
+.topnav2 a {   color: white;
+    text-decoration: none;
+    
+
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: 'copperplate';
+    font-weight: bolder;
+    font-size: 60px;
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'copperplate';
+    text-align: center;
+    border-bottom: red solid;
+}
+
+h3 {  
+    float: left;
+    width: 33%;
+    text-align: center;
+    font-family: 'copperplate';
+    overflow: auto;
+    font-size: 23px;
+    margin-bottom: 3px;
+
+}
+
+p {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin-left: 0px auto;
+    margin-right: 0px auto;
+    margin-top: 0px;
+    font-family: 'Courier New';
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+#weather {
+    width: 25%;
+}
+
+#intro { 
+    text-align: center;
+    font-family: 'Space mono',sans-serif;
+    width: 100%;
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.art1 { 
+    margin: 10px auto;
+    position: relative;
+}
+
+.grid { 
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(
+    3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap:10px;
+    grid-auto-rows: 200px auto;
+    grid-template-areas: "a b"
+                        "c  d"
+                        "f  f";  
+    margin-bottom: 100px; 
+}
+
+.a { 
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: "copperplate";
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid lightblue;
+    grid-area: 1 / 1/ 2 / 1;
+       
+}
+
+.b { 
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: 'copperplate';
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid lightblue;
+   
+    grid-area: 1 / 2 / 1 / span 2;
+}
+   
+
+
+.c {
+    padding: 10px;
+    border: 1px solid lightblue;
+   
+    grid-area: 2/ 1 / 3 / 1
+
+}
+
+.d { 
+    text-align: center justify;
+    border: 1px solid lightblue;
+    font-family: 'Courier New';
+   
+  grid-area: 2 / 2 / 2 / span 2;
+
+}
+
+h3.t1 {
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+    grid-area: 2 / 2 / 2 / span 2;
+
+}
+
+p.e { 
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.f {
+    border: 1px solid lightblue;
+    grid-area: 4 / 1 / 5 / span 3;
+}
+
+h3.t2 {
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+p.p2 { 
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+
+
+table, th, td {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding: 15px;
+    margin: 20px;
+}
+
+th { 
+    border-bottom: red solid;
+    text-align: center;
+    font-family: 'copperplate';
+    width: 33.3%;
+    font-weight: bolder;
+}
+
+td {
+    text-align: center;
+    font-family: 'Courier New';
+    width: 33.3%;
+}
+
+a {
+    color: black;
+}
+
+a.fullcap { 
+    text-align: center;
+    font-family: 'Courier New';
+}
+
+body {
+    background-color: white ;
+    font-family: 'Courier New';
+    
+}
+
+img {
+    width: 100%;
+    height: 300px;
+}
+
+.town {
+    margin-top: 40px;
+}
+
+.text { 
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url(https://images.vailresorts.com/image/upload/c_scale,dpr_3.0,f_auto,q_auto,w_500/v1/Whistler%20Blackcomb/Products/Images/Lodging/Winter/1400x610/Lodging_LOCreeksideDusk_MC_1400x610.jpg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.txt { 
+    color: black;
+    background-color: none;
+    border: none;
+    background: white;
+    opacity: 75%;
+    text-decoration: none;
+}
+
+footer {
+    border: 1px solid red;
+    padding: 40px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 5px;
+
+    
+
+}
+
+footer .foot { background: #D7263D;
+    border: 1px solid #D7263D;
+    border-radius: 3px;
+    color: #FFF;
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
